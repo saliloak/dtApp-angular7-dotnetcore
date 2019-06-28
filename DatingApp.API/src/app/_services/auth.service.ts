@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { JwtHelperService } from '@auth0/angular-jwt';
-//Service is not a component hence the Injectable attribute needs to be added
+import { environment } from 'src/environments/environment';
+// Service is not a component hence the Injectable attribute needs to be added
 @Injectable()
 export class AuthService {
 
-  baseUrl = 'http://localhost:5000/api/auth/';
+  baseUrl = environment.apiUrl + 'auth/';
   jwtHelper = new JwtHelperService();
   decodedToken: any;
 

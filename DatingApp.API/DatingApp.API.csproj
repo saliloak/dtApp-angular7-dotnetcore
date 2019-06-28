@@ -8,6 +8,10 @@
 
   <ItemGroup>
     <None Remove="src\app\routes.ts" />
+    <None Remove="src\app\_models\Photo.ts" />
+    <None Remove="src\app\_models\PhotoGallery.ts" />
+    <None Remove="src\app\_resolvers\member-detail.resolver.ts" />
+    <None Remove="src\app\_resolvers\member-list.resolver.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +28,10 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="src\app\routes.ts" />
+    <TypeScriptCompile Include="src\app\_models\PhotoGallery.ts" />
+    <TypeScriptCompile Include="src\app\_models\Photo.ts" />
+    <TypeScriptCompile Include="src\app\_resolvers\member-list.resolver.ts" />
+    <TypeScriptCompile Include="src\app\_resolvers\member-detail.resolver.ts" />
   </ItemGroup>
 
 </Project>
