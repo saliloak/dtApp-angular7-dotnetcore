@@ -14,6 +14,9 @@
     </ul>
     <!--An NgIf is called as a structural directive, and sturctural directives always have an asterix in front of them to denote there structural directives, these type of directives directly change the DOM-->
     <div *ngIf="loggedIn()" class="dropdown mt-3" dropdown>
+      <span class="mr-1">
+        <img src="{{photoUrl}}" alt=""/>
+      </span>
       <a class="dropdown-toggle text-light" dropdownToggle>
         Welcome {{authService.decodedToken?.unique_name | titlecase}}
       </a>
