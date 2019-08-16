@@ -9,6 +9,7 @@
   <ItemGroup>
     <None Remove="src\app\routes.ts" />
     <None Remove="src\app\_guards\prevent-unsaved-changes-guard.ts" />
+    <None Remove="src\app\_models\pagination.ts" />
     <None Remove="src\app\_models\Photo.ts" />
     <None Remove="src\app\_models\PhotoGallery.ts" />
     <None Remove="src\app\_resolvers\member-detail.resolver.ts" />
@@ -31,6 +32,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="src\app\routes.ts" />
     <TypeScriptCompile Include="src\app\_guards\prevent-unsaved-changes-guard.ts" />
+    <TypeScriptCompile Include="src\app\_models\pagination.ts" />
     <TypeScriptCompile Include="src\app\_models\PhotoGallery.ts" />
     <TypeScriptCompile Include="src\app\_models\Photo.ts" />
     <TypeScriptCompile Include="src\app\_resolvers\member-edit.resolver.ts" />
